@@ -1,0 +1,29 @@
+@import "../node_modules/bootswatch/dist/morph/bootstrap.min.css";
+
+
+
+
+
+.card{
+  transition: transform 1s;
+  min-height: 400px;
+  /* backface-visibility: hidden; */
+}
+
+.card:hover{
+  .flip-card-front{
+    display: none;
+  };
+  .card-back{
+    display:block !important;
+  }
+  transform: rotateY(360deg);
+  /* transform: scale(1.02); */
+
+}
+
+
+/* .profile-image{
+height: 100% !important;
+width: 100% !important;
+} */
